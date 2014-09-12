@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 version = '0.2'
 PACKAGE_NAME = 'jot'
 
-if sys.version < '2.6' or sys.version >= '3.0':
+if sys.version_info < (2, 6) or sys.version_info >= (3, 0):
     print >>sys.stderr, '%s requires Python >= 2.6 and < 3.0' % PACKAGE_NAME
     sys.exit(1)
 
